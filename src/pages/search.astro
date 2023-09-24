@@ -8,6 +8,7 @@ import Sidebar2 from "../components/Sidebar2.astro";
 import Footer from "../components/Footer.astro";
 import Searchard from "../components/Searchcard.astro";
 import Searchcard from "../components/Searchcard.astro";
+import Sidebarsearch from "../components/Sidebarsearch.astro";
 
 ---
 
@@ -21,35 +22,32 @@ import Searchcard from "../components/Searchcard.astro";
 <body>
 
    
- <Sidebar />
+ <Sidebarsearch />
  <Sidebar2 />
 
     
        <main>
     
         <h1 class="playlister">Spotify-playlister</h1>
-        <section class="playlister1">
-        <Card img="https://picsum.photos/id/65/150/150" header="Todays's Top Hits" text="Jung Kook is on top of the Hottest 50!"/>
-        <Card img="https://picsum.photos/id/68/150/150" header="RapCaviar" text="New music from Drake, Rod Wave and Doja Cat."/>
-        <Card img="https://picsum.photos/id/76/150/150" header="All Out 2010s" text="The biggest songs of the 2010s."/>
-        <Card img="https://picsum.photos/id/240/150/150" header="Rock Classics" text="Rock legends & epic songs."/>
-        <Card img="https://picsum.photos/id/331/150/150" header="Chill Hits" text="Kick back to the best new and recent chill hits."/>
-         </section>
-
-          <h1 class="playlisterh1">Sleep</h1>
-          <section class="playlister1">
-          <Card img="https://picsum.photos/id/325/150/150" header="Sleep" text="Gentle Ambient piano to help you fall asleep."/>
-        <Card img="https://picsum.photos/id/334/150/150" header="DayDreamer" text="Drift away with enthralling instrumentals."/>
-        </section>
-             <h1 class="playlisterh1">Blandet pose bolsjer</h1>
-          <section class="playlister1">
-          <Card img="https://picsum.photos/id/338/150/150" header="Monday Depression" text="When suicide is on your mind!"/>
-        <Card img="https://picsum.photos/id/349/150/150" header="Get Hyper" text="New music from Skrillex & Dj Jan."/>
-        <Card img="https://picsum.photos/id/364/150/150" header="Airplane Mode" text="Something really really chill?!"/>
-        <Card img="https://picsum.photos/id/240/150/150" header="Rock Classics" text="Rock legends & epic songs."/>
-        <Card img="https://picsum.photos/id/331/150/150" header="Din Mors ynglings" text="All of your moms favourite songs!"/>
+                  <section class="playlister1">
+<Searchcard header="Podcasts" color="#26856B" />
+<Searchcard header="Specielt til dig" color="#1C2E5E" />
+<Searchcard header="Hitlister" color="#8D67AB" />
+<Searchcard header="Nye udgivelser" color="#E8105B" />
+<Searchcard header="Opdag" color="#8865A6" />
+<Searchcard header="Live begivenheder" color="#7358FF" />
+<Searchcard header="Nye udgivelser" color="#B49BC8" />
+<Searchcard header="Pop" color="#EC37A2" />
+<Searchcard header="Sommer" color="#9CF0E1" />
+<Searchcard header="Party" color="#D7F27D" />
+<Searchcard header="Hiphop" color="#8966A7" />
+<Searchcard header="EQUAL" color="#158A06" />
+<Searchcard header="Hygge" color="#7358FF" />
+<Searchcard header="Træning" color="#777777" />
+<Searchcard header="Rock" color="#AF2896" />
         </section>
 
+          
        </main>
         
       

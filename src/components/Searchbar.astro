@@ -1,0 +1,72 @@
+
+        <div class="searchBox">
+
+            <input class="searchInput"type="text" name="" placeholder="Hvad vil du lytte til?">
+            <button class="searchButton">
+                
+                    <img src="search-icon-white.svg" alt="">
+
+            </button>
+        </div>
+
+        <style>
+
+
+.searchBox {
+    position: absolute;
+    top: -20%;
+    left: 8.5%;
+    transform:  translate(0%,50%);
+    background: #2f3640;
+    height: 28px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row-reverse;
+
+}
+
+.searchBox:hover .searchInput {
+    width: 260px;
+    padding: 0 6px;
+}
+
+.searchBox:hover .searchButton {
+  background: #2f3640;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: #2f3640;
+    float: right;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+        </style>

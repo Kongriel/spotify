@@ -1,0 +1,41 @@
+
+---
+import Tilmeldknap from "./Tilmeldknap.astro";
+---
+   
+   <footer class="footer">
+        <div class="footer-tekst">
+            <h2> EKSEMPEL PÅ SPOTIFY</h2>
+            <p> Tilmeld dig for at få ubegrænset sange og podcasts med lejlighedsvis reklamer. Du skal ikke bruge kreditkort.</p>
+        </div>
+     <Tilmeldknap />
+
+    </footer>
+
+    <style>
+        .footer {
+            margin-top: 10em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0rem 4%;
+background: rgb(174,44,152);
+background: linear-gradient(90deg, rgba(174,44,152,1) 0%, rgba(83,153,243,1) 100%);
+  z-index: 999;
+  position: absolute;
+border-radius: 10px;
+  width: 93%;
+
+
+}
+
+.footer-tekst p {
+  font-size: 1.6rem;
+}
+
+.footer-tekst h2 {
+  font-size: 1.8rem;
+}
+
+    </style>

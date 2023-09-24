@@ -1,0 +1,156 @@
+---
+import Danskknap from "./Danskknap.astro";
+---
+
+
+    <div class="left-container1">
+
+  
+
+    <nav class="navbar">
+        <a href="#">
+            <img src="biblio.svg" alt="Image 2"> 
+            Dit bibliotek
+                     <img src="plus.svg" alt="Image 2"> 
+             
+        </a>
+        <div class="tekstboks">
+               <a href="#">
+
+            <h2>Opret din første playliste</h2></a> 
+            <a href="#"><p>Det er nemt - vi skal nok hjælpe dig</p></a>
+             <a href="#" class="button">Opret playliste</a>
+        </div>
+        <div class="cookies">
+            <p>cookies</p>
+            <Danskknap />
+        
+        </div>
+    </nav>
+   
+</div>
+
+
+   
+
+
+
+
+
+    <style>
+
+.cookies {
+    margin-top: 5em;
+    gap: 3.5em;
+    color: #959595e6;
+    margin-left: 1.3em;
+}
+
+
+ .button {
+      display: inline-block;
+      padding: 5px 8px;
+      background-color: white;
+      color: rgb(0, 0, 0);
+      border: 2px solid white;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      font-size: 1em;
+      font-weight: 550;
+      width: 150px;
+      margin-left: 7rem;
+      margin-top: 3.8rem;
+
+    }
+
+
+
+    .button:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.05); 
+    }
+
+.tekstboks {
+    background-color: #292929;
+    margin-top: 4rem;
+    border-radius: 10px;
+    height: 200px;
+    width: 95%;
+margin-left: 0.8em;
+
+
+}
+.left-container1 {
+    width: 330px; 
+    background-color: #121212; 
+    position: fixed;
+    height: 100%; 
+    overflow-y: auto; 
+    gap: 20rem;
+    margin: 1rem;
+    margin-top: 12.2rem;
+    border-radius: 10px;
+    
+
+}
+
+
+
+
+
+
+
+.navbar {
+margin-top: 1.7rem;
+     margin-left: 0em;
+ gap: 1.3rem;
+
+   
+}
+
+.navbar img {
+  height: 30px;
+  margin-top: 0.7rem;
+   
+}
+
+
+
+
+
+.navbar a {
+  font-size: 2rem;
+  color: rgb(172, 172, 172);
+ text-decoration: none;
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+
+}
+.navbar a:last-child {
+  color: #191919df;
+  font-size: 1.7em;
+
+   
+
+}
+
+
+h2 {
+    margin-top: 2.2rem;
+    font-size: 1.8rem;
+
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+    </style>

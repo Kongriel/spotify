@@ -1,0 +1,76 @@
+---
+import Searchbar from "./Searchbar.astro";
+import Logpaa from "../components/Logpaa.astro";
+---
+<header>
+     
+    <div class="boks">
+    <div class="pile">
+        <img src="back-btn-white.svg" alt="Logo 1">
+             <img src="forward-btn-white.svg" alt="Logo 1">
+            
+       </div>
+    <Searchbar />
+    <Logpaa />
+    
+  
+    </div>
+  
+    </header>
+   
+  
+
+
+
+
+<style>
+
+header{
+
+  position: fixed;
+    color: white;
+    padding: 10px;
+   
+    top: 0;
+    z-index: 100; 
+
+}
+
+    .boks {
+        display:flex;
+        background-color:#121212;
+        position: sticky;
+      
+         align-items: center;
+         justify-content: space-between;
+        height: 70px;
+        width: 171%;
+   margin-left: 34rem;
+       
+        border-radius: 15px;
+       
+        
+   
+          
+     
+    }
+
+    
+
+
+ 
+
+ 
+
+    .pile img {
+    
+        height: 30px;
+        width: 30px;
+      
+  
+    }
+
+  
+
+
+</style>

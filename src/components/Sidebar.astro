@@ -1,0 +1,112 @@
+---
+import Header1 from "./Header1.astro";
+---
+<div class="main-container">
+<Header1/>
+    <div class="left-container">
+
+    <a href="/index" class="logo">
+        <img src="logowhite.svg" alt="Logo 1">
+       
+    </a>
+
+    <nav class="navbar">
+        <a href="/index" class="active">
+            <img src="home-fill-white.svg" alt="Image 2"> 
+             Hjem
+             
+        </a>
+        <a href="/search">
+            <img src="search-icon-white.svg" alt="Image 3"> 
+            Søg
+        </a>
+        
+    </nav>
+   
+</div>
+ </div>
+
+   
+
+
+
+
+
+    <style>
+
+
+
+.left-container {
+    width: 330px;
+    background-color: #121212; 
+    position: fixed;
+    height: 26%; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    gap: 20rem;
+    margin: 1rem;
+    border-radius: 10px;
+    margin-top: -8rem;
+
+}
+
+
+.logo{
+    margin-left: 2em;
+  
+}
+
+.logo img {
+     margin-top: 1.7rem;
+    height: 40px;
+    margin-bottom: 1.3rem;
+}
+
+
+.navbar {
+    display: grid;
+     margin-left: 2.5em;
+ gap: 1.3rem;
+
+   
+}
+
+.navbar img {
+  height: 30px;
+  margin-top: 0.7rem;
+   
+}
+
+.header.sticky {
+  border-bottom: 1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 130%;
+
+
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+ text-decoration: none;
+
+   
+
+}
+
+.navbar a:hover {
+transform: scale(1.03);
+
+   
+
+}
+
+
+
+
+
+
+    </style>

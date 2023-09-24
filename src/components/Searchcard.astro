@@ -1,0 +1,57 @@
+---
+const color = Astro.props.color;
+const header = Astro.props.header;
+
+
+---
+
+<section>
+
+     <article style={{ backgroundColor: color }}>
+            <h2>{header}</h2>
+    
+         </article>
+
+  </section>
+          
+ 
+
+  
+
+         <style>
+        section{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 180px);
+      
+         
+          
+            width: 1000px;
+            height: auto;
+            margin-left: 8.4rem;
+        }
+
+     
+
+        article {
+            align-items: top;
+            justify-content: left;
+            padding-top: 0rem;
+            font-size: 1.75rem;
+       
+       
+         
+      height: 200px;
+            
+            display: grid;
+            width: 200px;
+            border-radius: 10px;
+            transition: ease-in 0.1s;
+        }
+
+   article:hover {
+    transform: scale(1.04)
+   }
+
+   article h2 {
+         margin-left: 1rem;
+   }
